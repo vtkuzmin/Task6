@@ -1,9 +1,4 @@
 
-# coding: utf-8
-
-# In[14]:
-
-
 import math
 
 def main():
@@ -37,7 +32,9 @@ def main():
     t = (w1-w2)/math.sqrt(p*(1-p)*(1/n1 + 1/n2))
     
     if abs(t) < 1.96:
-        print "The hypothesis that the fractions are equal is not rejected as", abs(t), "< 1.96" 
+        print "The hypothesis that the fractions are equal is not rejected as", abs(t), "< 1.96"
+    else:
+        print "The hypothesis that the fractions are equal is rejected as", abs(t), ">= 1.96"
     
 
 if __name__ == '__main__':
